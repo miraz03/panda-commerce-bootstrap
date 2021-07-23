@@ -21,27 +21,35 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#shoes">Shoes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#backpacks">Backpacks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#subscribe">Subscribe</a>
-                        </li>
-                    </ul>
+                <div class="d-flex">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#shoes">Shoes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#backpacks">Backpacks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -58,7 +66,7 @@
                                     hearing.
                                 </p>
                                 <h1>$120</h1>
-                                <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy Now</a>
+                                <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                             </div>
                             <div class="col-lg-5"><img src="images/banner-images/headphone.png" class="d-block w-100"
                                     alt="...">
@@ -74,7 +82,7 @@
                                     time.
                                 </p>
                                 <h1>$1200</h1>
-                                <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy Now</a>
+                                <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                             </div>
                             <div class="col-lg-5"><img src="images/banner-images/tv.png" class="d-block w-100"
                                     alt="...">
@@ -90,7 +98,7 @@
                                     fake sports.
                                 </p>
                                 <h1>$620</h1>
-                                <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy Now</a>
+                                <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                             </div>
                             <div class="col-lg-5"><img src="images/banner-images/xbox.png" class="d-block w-100"
                                     alt="...">
@@ -118,20 +126,20 @@
         <!-- This is Category -->
         <section class="container my-5">
             <div class="row g-2">
-                <div class="col-lg-4 col-md-6">
-                    <div class="p-3 border bg-warning rounded-3 d-flex align-items-center justify-content-between">
+                <div class="col-lg-4 col-md-6 category">
+                    <div class="p-3 border category-watch rounded-3 d-flex align-items-center justify-content-between">
                         <h1 class="text-white">Watches</h1>
                         <img src="images/categories/watch.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="p-3 border bg-primary rounded-3 d-flex align-items-center justify-content-between">
+                <div class="col-lg-4 col-md-6 category">
+                    <div class="p-3 border category-shoe rounded-3 d-flex align-items-center justify-content-between">
                         <h1 class="text-white">Shoes</h1>
                         <img src="images/categories/shoes.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="p-3 border bg-success rounded-3 d-flex align-items-center justify-content-between">
+                <div class="col-lg-4 col-md-6 category">
+                    <div class="p-3 border category-bag rounded-3 d-flex align-items-center justify-content-between">
                         <h1 class="text-white">Bags</h1>
                         <img src="images/categories/bag.png" alt="">
                     </div>
@@ -149,6 +157,7 @@
                         <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Venture Runner</h5>
+                            <hr>
                             <p class="card-text">Elevating '80s style with a soft insole, the Nike Venture Runner
                                 celebrates 50 years of the Swoosh.Nodding to the iconic shoes that started the running
                                 revolution, it includes a throwback tongue label with original Nike script and
@@ -156,7 +165,7 @@
                                 DNA to a wardrobe essential.</p>
                         </div>
                         <div class="card-footer border-0 ">
-                            <a href="#" class="btn btn-warning" role="button" data-bs-toggle="button">Buy Now</a>
+                            <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -165,6 +174,7 @@
                         <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nike Court Vision Low Premium</h5>
+                            <hr>
                             <p class="card-text">In love with the classic look of '80s basketball but have a thing for
                                 the fast-paced culture of today's game?Meet the Nike Court Vision Low Premium.Its sleek
                                 design celebrates 50 years of Swoosh with a throwback tongue label, plus a large retro
@@ -172,7 +182,7 @@
                                 are inspired by the hook-shot look of the old-school days.</p>
                         </div>
                         <div class="card-footer border-0">
-                            <a href="#" class="btn btn-warning" role="button" data-bs-toggle="button">Buy Now</a>
+                            <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -181,6 +191,7 @@
                         <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Nike Air Max 90 SE</h5>
+                            <hr>
                             <p class="card-text">Nothing as fly, nothing as comfortable, nothing as proven—the Nike Air
                                 Max 90 SE celebrates the 50th anniversary of the Swoosh.Staying true to its running
                                 roots with iconic Waffle sole, stitched overlays and classic TPU accents on the eyelets
@@ -188,7 +199,7 @@
                                 fast-paced details add to the look.</p>
                         </div>
                         <div class="card-footer border-0">
-                            <a href="#" class="btn btn-warning" role="button" data-bs-toggle="button">Buy Now</a>
+                            <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -204,6 +215,7 @@
                         <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Provogue Sporty</h5>
+                            <hr>
                             <p class="card-text">This bag of Provogue comes with spacious comparment with unique design
                                 along with laptop sleeve and with 6 month manufacturer warranty.The quality proves the
                                 worth of the product.
@@ -213,7 +225,7 @@
                                 Washable,waterproof,Pure Polyster</p>
                         </div>
                         <div class="card-footer border-0 ">
-                            <a href="#" class="btn btn-warning" role="button" data-bs-toggle="button">Buy Now</a>
+                            <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -222,6 +234,7 @@
                         <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Wildcraft Super</h5>
+                            <hr>
                             <p class="card-text">Black backpack
                                 Non-Padded haul loop
                                 2 main compartments with zip closure
@@ -243,7 +256,7 @@
                                 Wipe with a clean, dry cloth to remove dust</p>
                         </div>
                         <div class="card-footer border-0">
-                            <a href="#" class="btn btn-warning" role="button" data-bs-toggle="button">Buy Now</a>
+                            <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -252,6 +265,7 @@
                         <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Tom Lang London</h5>
+                            <hr>
                             <p class="card-text">Burgundy solid messenger bag
                                 With non-detachable sling strap
                                 1 main compartment with button closure,
@@ -270,7 +284,7 @@
                                 Wipe with a clean, dry cloth when needed</p>
                         </div>
                         <div class="card-footer border-0">
-                            <a href="#" class="btn btn-warning" role="button" data-bs-toggle="button">Buy Now</a>
+                            <a href="#" class="panda-button" role="button" data-bs-toggle="button">Buy Now</a>
                         </div>
                     </div>
                 </div>
